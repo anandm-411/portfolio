@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing : border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: Arial, sans-serif;
+    background: #0b1120;
+    color: #f1f5f9;
+    line-height: 1.7;
+}
+header{
+    background: #111827;
+    padding: 20px 8%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo, span{
+    color:#38bdf8;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #38bdf8;
+}
+.hero {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 70px 10%;
+}
+.welcome{
+    color: #38bdf8;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero h1{
+  font-size: clamp(36px,6vw,60px);
+}
+
+.hero h2{
+    margin: 10px 0;
+    color: #cbd5e1;
+}
+
+.hero p{
+    max-width: 650px;
+    margin-bottom: 20px;
+}
+
+.button{
+    background: #38bdf8;
+    color: #0b1120;
+    padding: 12px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section:not(.hero){
+    padding: 65px 10%;
+}
+
+section h2{
+    color:#38bdf8;
+    margin-bottom: 20px;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.card, .project{
+    background: #172033;
+    border: 1px solid#334155;
+    border-radius: 10px;
+    padding: 22px;
+}
+
+.card{
+    flex: 1 1 150px;
+    text-align: center;
+}
+
+.project{
+    margin-bottom: 18px;
+}
+
+.project h3{
+    color: #7dd3fc;
+    margin-bottom: 10px;
+}
+footer{
+    text-align: center;
+    padding: 20px;
+    background: #111827;
+}
+
+@media (max-width:600px){
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    nav ul{
+        gap: 12px;
+    }
+    .hero{
+        min-height: 70vh;
+    }
+}
+
+.project-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #66e3ff;
+    color: #10172a;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.project-btn:hover {
+    background: white;
+    transform: scale(1.05);
+}
+
